@@ -1,5 +1,5 @@
 library(Seurat)
-lung <- readRDS("/Users/shangliu/01.terms/01.lung_metastasis/11.sub/data13/C04493G4.tumor.rds")
+lung <- readRDS("C04493G4.tumor.rds")
 
 lung <- NormalizeData(lung)
 
