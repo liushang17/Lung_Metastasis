@@ -41,9 +41,9 @@ ggplot(umapinfo,aes(x=as.numeric(X1),y=as.numeric(X2),color = cluster))+geom_poi
 ann$stage <- "Stage1"
 pos <- which(ann$pseu > 5)
 ann$stage[pos] <- "Stage2"
-pos <- which(ann$pseu > 24)
+pos <- which(ann$pseu > 24.3)
 ann$stage[pos] <- "Stage3"
-pos <- which(ann$pseu > 29)
+pos <- which(ann$pseu > 28.4)
 ann$stage[pos] <- "Stage4"
 table(ann$stage,ann$new_cluster)
 ann3 <- ann
