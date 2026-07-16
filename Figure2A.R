@@ -27,9 +27,7 @@ pos <- which(ann$pseudotime > 5)
 ann$stage[pos] <- "Phase2"
 pos <- which(ann$pseudotime > 24.3)
 ann$stage[pos] <- "Phase3"
-#pos <- which(ann$pseudotime > 27.37513)
-#ann$stage[pos] <- "Stage5"
-pos <- which(ann$pseudotime > 28)
+pos <- which(ann$pseudotime > 28.4)
 ann$stage[pos] <- "Phase4"
 
 Combine$stage <- ann$stage
